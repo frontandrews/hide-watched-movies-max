@@ -15,7 +15,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
                 });
             } else {
                 sendResponse({ status: 'exists' });
-            } 
+            }
         });
         return true;
     } else if (message.action === 'clearWatchedMovies') {
